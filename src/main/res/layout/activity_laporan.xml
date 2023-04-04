@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".LaporanActivity">
+
+    <TextView
+        android:id="@+id/teks"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Pelanggaran Siswa"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/etNis"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/teks"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="70dp"
+        android:hint="Nis"
+        />
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etNis"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:hint="Nama Siswa"/>
+
+    <EditText
+        android:id="@+id/etkls"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/etNama"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:hint="Kelas" />
+
+    <EditText
+        android:id="@+id/etJk"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etkls"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:hint="Jenis Kelamin" />
+    <EditText
+        android:id="@+id/etJenis"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etJk"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:hint="Jenis Pelanggaran"/>
+    <EditText
+        android:id="@+id/etTgl"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etJenis"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:hint="Tanggal Pelanggaran"/>
+    <EditText
+        android:id="@+id/etKet"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/etTgl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:hint="Keterangan"/>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/etKet"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Simpan"
+        android:textSize="18dp"
+        android:backgroundTint="@color/teal_700"/>
+</RelativeLayout>
